@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_video_view">#bb000000</color>
+
+    <color name="theme_color">#2095f4</color>
+
+    <color name="text_white">#ffffff</color>
+    <color name="text_red">#FF5340</color>
+    <color name="text_theme">@color/theme_color</color>
+
+    <color name="background_gray">#a5a5a5</color>
+    <color name="background_gray_light">#bababa</color>
+
+    <color name="selected_view_bg">#33ffffff</color>
+    <color name="text_hint">#55ffffff</color>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/bg_video_view"
+    android:orientation="vertical">
+
+    <SeekBar
+        android:id="@+id/danmaku_player_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_video_view"
+        android:maxHeight="4dp"
+        android:minHeight="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:progressDrawable="@drawable/layer_battery_progress"
+        android:thumb="@drawable/shape_seek_ball"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_bar_height"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/sel_item_background"
+            android:padding="10dp"
+            android:src="@drawable/sel_btn_play"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/tv_cur_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/progress_time"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/slash"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:text="@string/progress_time"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</LinearLayout>

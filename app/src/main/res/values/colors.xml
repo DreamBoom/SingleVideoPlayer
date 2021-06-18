@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- 黑色背景颜色 -->
+    <color name="immutable_background_black_color">#212121</color>
+    <!-- 字体颜色 -->
+    <color name="immutable_text_white">#ffffff</color>
+    <color name="immutable_text_black">#353535</color>
+    <color name="immutable_text_theme">#2095f4</color>
+    <color name="immutable_text_red">#FF5340</color>
+    <color name="immutable_text_orange">#f89957</color>
+    <color name="immutable_text_pink">#fb7299</color>
+    <!-- 普通item背景色 -->
+    <color name="item_bg_color">#ffffff</color>
+</resources>

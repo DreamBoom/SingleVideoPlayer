@@ -1,0 +1,6 @@
+include ':app',
+        ':player-core',
+        ':player-exoplayer',
+        ':player-ijkplayer',
+        ':extension-subtitle'
+rootProject.name='SingleVideoPlayer'

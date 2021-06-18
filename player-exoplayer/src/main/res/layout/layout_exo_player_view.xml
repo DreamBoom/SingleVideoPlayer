@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_video_box"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/black">
+
+<!--    <com.google.android.exoplayer2.ui.PlayerView-->
+<!--        android:id="@+id/exo_player_surface_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:visibility="gone"-->
+<!--        app:surface_type="surface_view">-->
+<!--    </com.google.android.exoplayer2.ui.PlayerView>-->
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exo_player_texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:surface_type="texture_view">
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+    <com.seiko.player.subtitle.SubtitleView
+        android:id="@+id/subtitle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom">
+    </com.seiko.player.subtitle.SubtitleView>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        tools:visibility="visible"/>
+
+    <include
+        layout="@layout/layout_touch_gestures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <com.seiko.player.widgets.top.TopBarView
+        android:id="@+id/top_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.seiko.player.widgets.top.TopBarView>
+
+    <com.seiko.player.widgets.BottomBarView
+        android:id="@+id/bottom_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="60dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        tools:visibility="visible">
+    </com.seiko.player.widgets.BottomBarView>
+
+    <ImageView
+        android:id="@+id/iv_player_lock"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/shape_player_lock_bg"
+        android:padding="12dp"
+        android:src="@drawable/sel_player_lock"
+        android:translationX="-60dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_player_shot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_player_lock_bg"
+        android:padding="12dp"
+        android:src="@mipmap/ic_video_screenshot"
+        android:translationX="60dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.seiko.player.widgets.SkipTipView
+            android:id="@+id/skip_tip_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+        </com.seiko.player.widgets.SkipTipView>
+
+        <com.seiko.player.widgets.SkipTipView
+            android:id="@+id/skip_subtitle_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:skip_subtitle="true"
+            android:visibility="gone">
+        </com.seiko.player.widgets.SkipTipView>
+    </LinearLayout>
+
+    <!--字幕设置-->
+    <com.seiko.player.subtitle.SubtitleSettingView
+        android:id="@+id/subtitle_setting_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:translationX="300dp"
+        tools:visibility="visible"
+        tools:translationX="0dp"/>
+
+<!--    <com.seiko.tv.danmaku.ijk.media.player.commom.widgets.DanmuPostView-->
+<!--        android:id="@+id/danmu_post_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone">-->
+<!--    </com.seiko.tv.danmaku.ijk.media.player.commom.widgets.DanmuPostView>-->
+
+<!--    <com.seiko.tv.danmaku.ijk.media.player.commom.widgets.DanmuBlockView-->
+<!--        android:id="@+id/danmu_block_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:visibility="gone">-->
+<!--    </com.seiko.tv.danmaku.ijk.media.player.commom.widgets.DanmuBlockView>-->
+</FrameLayout>

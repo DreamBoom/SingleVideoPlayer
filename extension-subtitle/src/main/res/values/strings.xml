@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">extension-subtitle</string>
+    <string name="subtitle_web">网络字幕</string>
+    <string name="subtitle_out">外挂字幕</string>
+    <string name="change_subtitle">换源</string>
+    <string name="subtitle_stats">字幕状态</string>
+    <string name="subtitle_null">(未加载)</string>
+    <string name="txt_select">选择</string>
+    <string name="txt_hide">隐藏</string>
+    <string name="txt_not_white">无_白</string>
+    <string name="txt_not_black">无_黑</string>
+    <string name="txt_white_black">白_黑</string>
+    <string name="txt_black_white">黑_白</string>
+    <string name="txt_background_text_color">背景色_字体色</string>
+    <string name="txt_text_size">字体大小</string>
+    <string name="percent_50">50%</string>
+    <string name="txt_center">确定</string>
+</resources>

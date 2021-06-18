@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SubtitleSettingView">
+        <attr name="item_background" format="reference|color" />
+    </declare-styleable>
+</resources>
